@@ -14,6 +14,9 @@ static CGFloat const distanceInterval = 10;
 
 @interface YUHorseRaceLamp : UIView
 
+@property (nonatomic,copy) NSString * text;
+@property (nonatomic,strong) UIColor * textColor;
+
 /**
  * method 2个title
  */
@@ -25,12 +28,6 @@ static CGFloat const distanceInterval = 10;
  */
 @property (nonatomic,assign,readonly) CGFloat currentTitleX;
 @property (nonatomic,assign,readonly) CGFloat currentTitle2X;
-
-
-/**
- * method 初始化方法
- */
-- (instancetype)initWithFrame:(CGRect)frame title:(NSString*)title;
 
 
 @end
